@@ -28,8 +28,6 @@ public class AnimatedPlayer : MonoBehaviour
         }   
         if (frame >= 0f && frame < sprites.Length) {
             spriteRenderer.sprite = sprites[frame];
-        }
-         
+        }    
     }
-
 }

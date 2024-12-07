@@ -3139,27 +3139,6 @@ Transform:
   - {fileID: 1308102143}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &962665707 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5614597145390184258, guid: 527b792b4d697974b85e94714e548c74, type: 3}
-  m_PrefabInstance: {fileID: 3159164924760588284}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &962665710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 962665707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7083ebde756bce94198b241a24971031, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  idle: {fileID: 21300000, guid: 10b6daa56ae067340befefcfbdab13ae, type: 3}
-  run: {fileID: 21300000, guid: 514a6f6c952e6b345af0ffaa010c33ed, type: 3}
-  jump: {fileID: 21300000, guid: 4fb12b6ea6bb58344911cb8ffdf22d64, type: 3}
-  slide: {fileID: 21300000, guid: 1b59bb4763b3e8544aadf754176cf8c9, type: 3}
 --- !u!4 &973681851 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8860010069584089412, guid: e35c6f9d1ea2cbc46a93dc85cc6d5682, type: 3}
@@ -5965,7 +5944,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1911301897}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7083ebde756bce94198b241a24971031, type: 3}
   m_Name: 
@@ -6667,6 +6646,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 1586926616925333689, guid: 527b792b4d697974b85e94714e548c74, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3079761030019153998, guid: 527b792b4d697974b85e94714e548c74, type: 3}
       propertyPath: m_Offset.y
       value: 0
@@ -6735,13 +6718,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1193504366799476210, guid: 527b792b4d697974b85e94714e548c74, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5614597145390184258, guid: 527b792b4d697974b85e94714e548c74, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 962665710}
     - targetCorrespondingSourceObject: {fileID: 1560149082993858808, guid: 527b792b4d697974b85e94714e548c74, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1911301900}

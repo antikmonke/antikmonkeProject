@@ -1,3 +1,4 @@
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.Scripting;
 
@@ -16,7 +17,13 @@ public class PlayerSpriteRenderer : MonoBehaviour
         movement = GetComponentInParent<PlayerMovement>();
     }
 
+    private void OnEnable() {
+        spriteRenderer.enabled = true; 
+    }
 
+    private void OnDisable() {
+        spriteRenderer.enabled = false;
+    }
 
     private void LateUpdate() {
          
@@ -30,7 +37,7 @@ public class PlayerSpriteRenderer : MonoBehaviour
         else if (!movement.running) {
             spriteRenderer.sprite = idle;
         }
-        run.enabled = movement.running; 
+        
         
 
 
